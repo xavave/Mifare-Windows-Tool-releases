@@ -30,8 +30,8 @@ Each release provides a ZIP archive containing the application and its bundled N
 - A supported NFC reader:
   - **ACS ACR122U** (PC/SC) – recommended
   - **PN532-based modules** (for example the Elechouse NFC Module V3) connected through a USB-to-serial adapter (UART, e.g. CP2102)
-- For the ACR122U: the ACS driver or the standard Windows smart-card driver
-- For a PN532 module: the USB-to-serial adapter driver, and the module set to UART mode
+- For the ACR122U: the ACS driver (https://www.acs.com.hk/download-driver-unified/9840/ACS-Unified-MSI-4280.rar) or the standard Windows smart-card driver
+- For a PN532 module: the USB-to-serial adapter driver (https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip), and the module set to UART mode
 - MIFARE Classic cards (1K / 4K). "Magic" cards (gen1a) are supported for full-card cloning, including UID changes.
 
 ## Features
