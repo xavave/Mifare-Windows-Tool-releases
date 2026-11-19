@@ -2,7 +2,7 @@
 
 [![Latest release](https://img.shields.io/github/v/release/xavave/Mifare-Windows-Tool-releases?label=latest%20release)](https://github.com/xavave/Mifare-Windows-Tool-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/xavave/Mifare-Windows-Tool-releases/total)](https://github.com/xavave/Mifare-Windows-Tool-releases/releases)
-![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-blue)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64%20%7C%20arm64-blue)
 [![License: Freeware](https://img.shields.io/badge/license-freeware-green.svg)](LICENSE)
 
 **Mifare Windows Tool (MWT)** is a Windows desktop application for reading, writing, analysing and cloning **MIFARE Classic** cards, built on top of the open-source [libnfc](https://github.com/nfc-tools/libnfc) toolchain and an **ACR122U** (PC/SC) reader.
@@ -16,17 +16,22 @@
 
 Grab the latest build from the **[Releases page](https://github.com/xavave/Mifare-Windows-Tool-releases/releases/latest)**.
 
-Each release provides a ZIP archive containing the application and its bundled NFC command-line tools.
+Each release provides two Windows Installer (`.msi`) packages, which include the application and its bundled NFC command-line tools:
+
+- `MifareWindowsTool_vX.Y.Z_x64.msi` – for standard 64-bit Intel / AMD PCs
+- `MifareWindowsTool_vX.Y.Z_arm64.msi` – for Windows on ARM devices (e.g. Snapdragon-based PCs)
 
 ## Installation
 
-1. Download the latest `.zip` from the [Releases page](https://github.com/xavave/Mifare-Windows-Tool-releases/releases/latest).
-2. Extract it to a folder of your choice (for example `C:\Program Files (x86)\AVXTEC\MWT`).
-3. Plug in your reader and run `MifareWindowsTool.exe`.
+1. Download the `.msi` matching your PC (`x64` or `arm64`) from the [Releases page](https://github.com/xavave/Mifare-Windows-Tool-releases/releases/latest).
+2. Run the `.msi` and follow the installer steps.
+3. Plug in your reader and launch Mifare Windows Tool (`MifareWindowsTool.exe`).
+
+To uninstall, use **Settings › Apps** in Windows.
 
 ## Requirements
 
-- Windows 10 / 11 (64-bit)
+- Windows 10 / 11 (64-bit: x64 or arm64)
 - A supported NFC reader:
   - **ACS ACR122U** (PC/SC) – recommended
   - **PN532-based modules** (for example the Elechouse NFC Module V3) connected through a USB-to-serial adapter (UART, e.g. CP2102)
